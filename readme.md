@@ -160,7 +160,7 @@ Run the tests
 `$ pytest -sv `
 
 Output
-```buildoutcfg pytest output
+```buildoutcfg
 platform linux -- Python 3.6.7, pytest-5.1.2, py-1.8.0, pluggy-0.12.0 -- /home/sjdillon/venv/py3/bin/python3
 cachedir: .pytest_cache
 rootdir: /home/sjdillon/tmp/qthena, inifile: pytest.ini
