@@ -4,4 +4,4 @@ python:
 install:
   - pip install tox
 script:
-  - py.test -sv
+  - tox
