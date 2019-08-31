@@ -1,9 +1,10 @@
 # qthena
+[![Build Status](https://travis-ci.org/sjdillon/qthena.svg?branch=master)](https://travis-ci.org/sjdillon/qthena)
 
 **qthena** helps getting data from aws athena.
 
 * `athena_data_access.py` -- main class and helper functions for querying athena
-* `boto_manager.py` -- creates and manages boto sessions and clients, allows mocking playback and recording.  Used in the unit tests.
+* `qthena.py` -- creates and manages boto sessions and clients, allows mocking playback and recording.  Used in the unit tests.
 
 # What does qthena mean?
 - **"q"** - query
