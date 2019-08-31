@@ -4,7 +4,7 @@
 **qthena** helps getting data from aws athena.
 
 * `athena_data_access.py` -- main class and helper functions for querying athena
-* `qthena.py` -- creates and manages boto sessions and clients, allows mocking playback and recording.  Used in the unit tests.
+* `boto_manager.py` -- creates and manages boto sessions and clients, allows mocking playback and recording.  Used in the unit tests.
 
 # What does qthena mean?
 - **"q"** - query
@@ -122,19 +122,19 @@ def results_to_df(results):
     return pd.DataFrame(listed_results)
 
 # run a query against Athena
-q = "select * from sjd_abc_integ_product.delta_events limit 6"
+q = "select * from sjd_abc_dev.delta limit 6"
 results = runner.select(q,to_list=False)
 
 # convert results to a dataframe
 df=results_to_df(results)
 
-print (df[['vendorid','storeid','product_id','hit','miss']])`
+print (df[['vid','sid','pid','hit','miss']])`
 ```
 
 ## Output
 
 ```
-	vendorid storeid product_id	hit	miss
+	vid sid         pid	hit	miss
 0	5	store9876	114	3	2
 1	5	store9876	116	2	3
 2	5	store9876	111	0	5
@@ -160,7 +160,7 @@ Run the tests
 `$ pytest -sv `
 
 Output
-```buildoutcfg
+```buildoutcfg pytest output
 platform linux -- Python 3.6.7, pytest-5.1.2, py-1.8.0, pluggy-0.12.0 -- /home/sjdillon/venv/py3/bin/python3
 cachedir: .pytest_cache
 rootdir: /home/sjdillon/tmp/qthena, inifile: pytest.ini
