@@ -1,0 +1,43 @@
+{
+    "status_code": 200,
+    "data": {
+        "QueryExecution": {
+            "QueryExecutionId": "78f29963-e1c6-4ebf-be7a-b9066b0448c2",
+            "Query": "show databases",
+            "StatementType": "UTILITY",
+            "ResultConfiguration": {
+                "OutputLocation": "s3://s3-sjd-illon-integ-us-west-2-data/awsathenadata/product/queryresults/78f29963-e1c6-4ebf-be7a-b9066b0448c2.txt"
+            },
+            "QueryExecutionContext": {
+                "Database": "default"
+            },
+            "Status": {
+                "State": "RUNNING",
+                "SubmissionDateTime": {
+                    "__class__": "datetime",
+                    "year": 2019,
+                    "month": 8,
+                    "day": 26,
+                    "hour": 13,
+                    "minute": 53,
+                    "second": 52,
+                    "microsecond": 607000
+                }
+            },
+            "Statistics": {},
+            "WorkGroup": "primary"
+        },
+        "ResponseMetadata": {
+            "RequestId": "27b3c76b-caeb-4582-bdf1-51cbf068fb23",
+            "HTTPStatusCode": 200,
+            "HTTPHeaders": {
+                "content-type": "application/x-amz-json-1.1",
+                "date": "Mon, 26 Aug 2019 17:53:51 GMT",
+                "x-amzn-requestid": "27b3c76b-caeb-4582-bdf1-51cbf068fb23",
+                "content-length": "980",
+                "connection": "keep-alive"
+            },
+            "RetryAttempts": 0
+        }
+    }
+}
