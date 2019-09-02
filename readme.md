@@ -134,13 +134,13 @@ print (df[['vid','sid','pid','hit','miss']])`
 ## Output
 
 ```
-	vid sid         pid	hit	miss
-0	5	store9876	114	3	2
-1	5	store9876	116	2	3
-2	5	store9876	111	0	5
-3	5	store9876	88	0	5
-4	5	store9876	111	2	3
-5	5	store9876	114	3	2
+	vid 	sid         	pid	hit	miss
+0	5	stir9876	114	3	2
+1	5	stir9876	116	2	3
+2	5	stir9876	111	0	5
+3	5	stir9876	88	0	5
+4	5	stir9876	111	2	3
+5	5	stir9876	114	3	2
 ```
 
 
