@@ -1,0 +1,3 @@
+steps:
+- name: 'run tox'
+  args: ['bash', 'tox']
