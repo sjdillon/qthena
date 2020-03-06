@@ -1,5 +1,9 @@
+# steps:
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/py3-image', '.' ]
+# images:
+# - 'gcr.io/$PROJECT_ID/py3-image'
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/py3-image', '.' ]
-images:
-- 'gcr.io/$PROJECT_ID/py3-image'
+- name: 'gcr.io/$PROJECT_ID/py3-image' # Cloud Build automatically substitutes $PROJECT_ID for your Project ID.  
+  entrypoint: '/bin/bash'
+  args: ['-c','tox' ]
