@@ -4,6 +4,6 @@
 # images:
 # - 'gcr.io/$PROJECT_ID/py3-image'
 steps:
-- name: 'gcr.io/$PROJECT_ID/py3-image' # Cloud Build automatically substitutes $PROJECT_ID for your Project ID.  
+- name: 'gcr.io/$PROJECT_ID/py3-image' #  Cloud Build automatically substitutes $PROJECT_ID for your Project ID.  
   entrypoint: '/bin/bash'
   args: ['-c','tox' ]
